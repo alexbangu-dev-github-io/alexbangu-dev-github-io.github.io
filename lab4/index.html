@@ -1,37 +1,26 @@
-<!DOCTYPE HTML PUBLIC "./W3C//DTD HTML 4.0//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
 
 <!--
-	Author: Alex Bangu
-	Purpose: A webpage with the following links and sub webpages: Browsers (browsers.html), 
-	History/Invention (hist_inv.html), OS (os.html), Webpage Design (web_design.html)
-	Date: December 14th, 2020
+Author: Alex Bangu
+Purpose:
+This code creates a layout for 2 frames:
+a table of contents on the left (20% of the screen)
+and a main page on the right (80% of the screen)
+Date: December 14th, 2020
 -->
-<title>Computer Science</title>
 
-<head>
-	<base target="main">
-</head>
+<html>
+ 	<head>
+ 		<title>
+ 			ICS2O: Grade 10 Computer and Information Science
+ 		</title>
+	 </head>
+	<frameset cols="20%, 80%" border="0">
+ 
+		<frame src="toc.html" name="toc"> 
 
-<body style="background-color:#9df59a" text="#3564b0" link="blue" vlink="purple" alink="red">
-	<div align="center">
-		<font size="16" color="#3564b0">
-			<b>Computer Science</b>
-		</font>
-	</div>
-<hr>
-	
-<font size="5">Topics:
-<ul>
-	<font size="5">
-		<li><a href="main.html">Home</a></li>
-		<hr>
-		<li><a href="browsers.html">Browsers</a></li>
-		<li><a href="hist_inv.html">Computer History/Inventions</a></li>
-		<li><a href="os.html">Operating Systems</a></li>
-		<li><a href="web_design.html">Webpage Design</a></li>
-	</font>
-</ul>
+		<frame src="main.html" name="main"> 
 
-</font>
+	</frameset>
 
-</body>
+</html>
